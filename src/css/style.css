@@ -59,3 +59,117 @@ body{
     justify-content: space-between;
     background-color: #DDDDDD;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* HuertoHogar Admin – Forma A: Verde #2E8B57, Mostaza #FFD700, Marrón #8B4513 */
+:root{
+  --brand:#2E8B57;      /* Verde esmeralda */
+  --accent:#FFD700;     /* Mostaza */
+  --title:#8B4513;      /* Marrón */
+  --bg:#F7F7F7;
+  --text:#333;
+  --muted:#6c757d;
+  --border:#e9ecef;
+  --sidebar-bg:#ffffff;
+}
+
+*{box-sizing:border-box}
+body{
+  font-family:'Montserrat',system-ui,Arial,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+}
+h1,h2,h3,h4,h5{
+  font-family:'Playfair Display',serif;
+  color:var(--title);
+}
+
+/* Layout base */
+.layout{display:flex;min-height:100vh}
+.sidebar{
+  width:240px;background:var(--sidebar-bg);border-right:1px solid var(--border);
+  display:flex;flex-direction:column;position:sticky;top:0;height:100vh
+}
+.sidebar-brand{
+  display:flex;align-items:center;gap:.6rem;padding:1rem;border-bottom:1px solid var(--border);
+  font-weight:700;color:var(--brand)
+}
+.brand-name{letter-spacing:.2px}
+.sidebar-nav{display:flex;flex-direction:column;padding:.25rem 0}
+.sidebar-link{
+  display:flex;align-items:center;gap:.6rem;padding:.625rem 1rem;
+  color:#344; text-decoration:none; border-left:4px solid transparent
+}
+.sidebar-link:hover{background:#f8f9fa}
+.sidebar-link.active{border-left-color:var(--brand);background:#f3f9f5}
+.sidebar-link i{width:18px;text-align:center}
+.sidebar-bottom{margin-top:auto;border-top:1px solid var(--border);padding:.25rem 0}
+.sidebar-link.muted{color:var(--muted)}
+.sidebar-bottom .copyright{padding:.5rem 1rem;color:var(--muted)}
+
+.content{flex:1;padding:1.25rem 1.5rem}
+.page-header{
+  background:#fff;border:1px solid var(--border);border-radius:.75rem;padding:.75rem 1rem;
+  display:flex;align-items:center;justify-content:space-between
+}
+
+/* Paneles (imitan el mockup de la Figura 11) */
+.dashboard-area{
+  display:grid;grid-template-rows:1fr 1fr;gap:0;border:1px solid var(--border);
+  border-radius:.75rem;overflow:hidden;background:#fff;min-height:520px
+}
+.dashboard-area .panel{min-height:240px}
+.dashboard-area .panel.top{border-bottom:1px solid var(--border);}
+
+/* Detalles de acento */
+.logo{font-size:1.15rem}
+.sidebar .brand-name::after{
+  content:''; display:inline-block; width:.55rem; height:.55rem; margin-left:.45rem;
+  background:var(--accent); border-radius:50%;
+}
+
+/* Utilidades */
+.small,.form-text{color:var(--muted)}
+
+
+/* Header del sidebar */
+.sidebar-brand{
+  padding: 1rem;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;     /* centra el logo */
+  height: 84px;                /* alto fijo del header */
+}
+
+/* Logo dentro del header */
+.sidebar-brand .brand-logo{
+  display: block;
+  max-width: 180px;            /* nunca más ancho que el sidebar */
+  max-height: 56px;            /* evita que crezca en alto */
+  width: auto;
+  height: auto;
+  object-fit: contain;         /* mantiene proporción dentro del recuadro */
+}
+
+/* Por si el logo llegaba a empujar el contenido */
+.sidebar{ width: 240px; overflow-x: hidden; }
