@@ -59,3 +59,12 @@ body{
     justify-content: space-between;
     background-color: #DDDDDD;
 }
+
+.divSesion{
+    max-width: 500px; /* tamaño máximo horizontal */
+    margin: 50px auto; /* centrado horizontal con margen arriba/abajo */
+    padding: 20px;
+    background: #fff; /* opcional, como tarjeta */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* opcional */
+}
