@@ -60,11 +60,58 @@ body{
     background-color: #DDDDDD;
 }
 
-.divSesion{
+.divSesion{  /*USADO EN REGISTRO E INICIO DE SESION*/
     max-width: 500px; /* tamaño máximo horizontal */
     margin: 50px auto; /* centrado horizontal con margen arriba/abajo */
     padding: 20px;
     background: #fff; /* opcional, como tarjeta */
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* opcional */
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column; /* Carrusel arriba, miniaturas abajo */
+    align-items: center;    /* Centrar todo */
+    gap: 15px;              /* Espacio entre carrusel y miniaturas */
+}
+
+.carrusel {
+    width: 600px;           /* Ajusta el ancho del carrusel */
+}
+
+.miniaturas {
+    display: flex;
+    flex-direction: row;    /* Miniaturas en fila */
+    justify-content: center;
+    gap: 10px;              /* Espacio entre miniaturas */
+    width: 100%;            /* Ocupar ancho completo si quieres */
+    margin: 0;              /* Sin márgenes laterales */
+}
+
+.miniaturas img {
+    width: 100px;           /* Tamaño miniaturas */
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.carruselImg {  
+  height: 400px;        /* Fija una altura igual para todas */
+}
+
+.colorSecundario{
+    color: #18851d
+}
+
+.imgGrid {
+  width: 100%;           /* Que siempre ocupe el ancho completo de la card */
+  height: 200px;         /* Altura fija para todas las imágenes */
+  object-fit: cover;     /* Recorta manteniendo proporciones */
+}
+
+.tamannoGrid {
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
