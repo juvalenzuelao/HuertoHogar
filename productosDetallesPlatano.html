@@ -49,9 +49,81 @@
     </div>
   </nav>
 
+  <section class="container my-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="contenedor">
+
+          <!-- Carrusel principal -->
+          <div class="carrusel">
+            <div id="bootstrapCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active carruselImg">
+                  <img src="/src/img/PlatanosVarios.jpg" class="w-100" alt="Imagen 1">
+                </div>
+                <div class="carousel-item carruselImg">
+                  <img src="/src/img/PlatanoCavendish.png" class="w-100" alt="Imagen 2">
+                </div>
+                <div class="carousel-item carruselImg">
+                  <img src="/src/img/PlantanoPlanta.jpg" class="w-100" alt="Imagen 3">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#bootstrapCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#bootstrapCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <!-- Miniaturas -->
+          <div class="miniaturas">
+            <img src="/src/img/PlatanosVarios.jpg" class="active " data-bs-target="#bootstrapCarousel" data-bs-slide-to="0">
+            <img src="/src/img/PlatanoCavendish.png" data-bs-target="#bootstrapCarousel" data-bs-slide-to="1">
+            <img src="/src/img/PimientosPlanta.jpg" data-bs-target="#bootstrapCarousel" data-bs-slide-to="2">
+          </div>
+
+        </div>
+      </div>
+      <!--Compra y descripción-->
+      <div class="col-md-6">
+        <h3 class="fw-bold">FR003 Platano Cavendish</h3>
+        <h3 class="text-danger fw-bold">$800 x KG
+        </h3>
+        <button class="btn btn-outline-secondary w-100 mb-3">AÑADIR AL CARRO</button>
+        <div class="p-3 bg-light border rounded">
+          <h5 class="text-success">Descripción<nav></nav>
+          </h5>
+          <p>Plátanos de sabor suave y dulce, con una textura cremosa perfecta para comer solos, añadir a batidos,
+             postres o acompañar tus desayunos. Una excelente fuente natural de potasio y energía.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Cambiar borde activo al hacer clic
+      const miniaturas = document.querySelectorAll('.miniaturas img');
+      miniaturas.forEach(img => {
+        img.addEventListener('click', () => {
+          miniaturas.forEach(i => i.classList.remove('active'));
+          img.classList.add('active');
+        });
+      });
+    </script>
+
+  </section>
+
+  <hr>
+  <!--Productos-->
+  <section>
+
     <div class="container text-center tamannoGrid">
       <div class="row">
-        <div class="col-md-3">
+        <div class="col">
           <a href="/productosDetallesNaranja.html">
             <div class="card" style="width: 18rem;">
               <img src="/src/img/NaranjaValencia.jpg" class="card-img-top imgGrid" alt="...">
@@ -66,15 +138,15 @@
           </a>
         </div>
 
-        <div class="col-md-3">
-          <a href="/productosDetallesPlatano.html">
+        <div class="col">
+          <a href="/productosDetallesMiel.html">
             <div class="card" style="width: 18rem;">
-              <img src="/src/img/PlatanoCavendish.png" class="card-img-top imgGrid" alt="...">
+              <img src="/src/img/MielOrganica.jpg" class="card-img-top imgGrid" alt="...">
               <div class="card-body">
-                <p class="card-text text-start">FR003 Plátanos Cavendish</p>
+                <p class="card-text text-start">FR003 Miel orgánica</p>
                 <hr>
                 <div class="text-end">
-                  <p class="text-end otro"><b class="colorSecundario">$800 x KG</b></p>
+                  <p class="text-end otro"><b class="colorSecundario">$5000 x 500GR</b></p>
                 </div>
               </div>
             </div>
@@ -82,7 +154,7 @@
 
         </div>
 
-        <div class="col-md-3">
+        <div class="col">
           <a href="/productosDetallesZanahoria.html">
             <div class="card" style="width: 18rem;">
               <img src="/src/img/ZanahoriasOrganicas.png" class="card-img-top imgGrid" alt="...">
@@ -90,7 +162,7 @@
                 <p class="card-text text-start">VR001 Zanahorias</p>
                 <hr>
                 <div class="text-end">
-                  <p class="text-end otro"><b class="colorSecundario">$900 x KG</b></p>
+                  <p class="text-end otro"><b class="colorSecundario">$900 x GR</b></p>
                 </div>
               </div>
             </div>
@@ -98,7 +170,7 @@
 
         </div>
 
-        <div class="col-md-3">
+        <div class="col">
           <a href="/productosDetallesEspinaca.html">
             <div class="card" style="width: 18rem;">
               <img src="/src/img/EspinacasFrescas.jpg" class="card-img-top imgGrid" alt="...">
@@ -116,56 +188,7 @@
       </div>
     </div>
 
-    <div class="container text-center tamannoGrid">
-      <div class="row">
-        <div class="col-md-3">
-          <a href="/productosDetallesManzana.html">
-            <div class="card" style="width: 18rem;">
-              <img src="/src/img/ManzanasFuji.jpg" class="card-img-top imgGrid" alt="...">
-              <div class="card-body">
-                <p class="card-text text-start">FR001 Manzana Funji</p>
-                <hr>
-                <div class="text-end">
-                  <p class="text-end otro"><b class="colorSecundario">$1.200 x KG</b></p>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-3">
-          <a href="/productosDetallesMiel.html">
-            <div class="card" style="width: 18rem;">
-              <img src="/src/img/MielOrganica.jpg" class="card-img-top imgGrid" alt="...">
-              <div class="card-body">
-                <p class="card-text text-start">PO001 Miel orgánica</p>
-                <hr>
-                <div class="text-end">
-                  <p class="text-end otro"><b class="colorSecundario">$5000 x GR</b></p>
-                </div>
-              </div>
-            </div>
-          </a>
-
-        </div>
-
-        <div class="col-md-3">
-          <a href="/productosDetallesPimiento.html">
-            <div class="card" style="width: 18rem;">
-              <img src="/src/img/PimientosTricolores.jpg" class="card-img-top imgGrid" alt="...">
-              <div class="card-body">
-                <p class="card-text text-start">VR003 Pimientos tricolores</p>
-                <hr>
-                <div class="text-end">
-                  <p class="text-end otro"><b class="colorSecundario">$1500 x KG</b></p>
-                </div>
-              </div>
-            </div>
-          </a>
-
-        </div>
-      </div>
-    </div>
+  </section>
 
   <footer class="bg-dark text-white py-4 mt-5">
     <div class="container">
@@ -175,7 +198,6 @@
           <h5 class="mb-3">Huerto Hogar</h5>
         </div>
 
-        <!-- Categorías -->
         <div class="col-md-4">
           <div class="d-flex flex-wrap">
             <a href="#" class="text-primary text-decoration-none me-2">Nosotros</a>
@@ -186,7 +208,6 @@
           </div>
         </div>
 
-        <!-- Newsletter -->
         <div class="col-md-5">
           <p class="mb-2">¡No te pierdas las últimas noticias!</p>
           <div class="input-group">
@@ -196,7 +217,6 @@
         </div>
       </div>
 
-      <!-- Segunda fila: Métodos de pago -->
       <div class="row mt-4">
         <div class="col-md-7">
           <div class="d-flex align-items-center">
@@ -216,7 +236,6 @@
         </div>
       </div>
 
-      <!-- Línea separadora y copyright -->
       <hr class="my-4">
       <div class="row">
         <div class="col-12 text-center">
