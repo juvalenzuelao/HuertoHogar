@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/contacto.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container">
+
+        <div class="col-md-6 logo-Huerto">
+                <img src="src/img/LogoHuerto.png" alt="Huerto" class="img-fluid rounded">
+        </div>
+        <a class="navbar-brand title-page" href="main.html">Huerto Hogar</a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto menu">
+            <li class="nav-item">
+              <a class="nav-link" href="main.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blogs.html">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="ms-2">Prod(0)</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="row align-items-center shadow-lg rounded overflow-hidden bg-white">
+            
+            <div class="col-md-6 p-0">
+                <img src="src/img/contacto.jpg" alt="Huerto Hogar" class="img-fluid contacto">
+            </div>
+            
+            <div class="col-md-6 p-5">
+                <h2 class="mb-4">Contáctanos</h2>
+                <p>
+                    En <strong>HuertoHogar</strong> valoramos la comunicación y siempre estamos disponibles para responder tus dudas. 
+                    Si tienes consultas, comentarios o sugerencias, completa el siguiente formulario y nos pondremos en contacto contigo lo antes posible.
+                </p>
+                
+                <form id="contactoForm">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <input type="text" id="nombreContacto" class="form-control" placeholder="Nombre *" required>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <input type="text" id="apellidoContacto" class="form-control" placeholder="Apellido *" required>
+                        </div>
+
+                    </div>
+                        
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input type="email" id="correoContacto" class="form-control" placeholder="Correo *" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="tel" id="telefonoContacto" class="form-control" placeholder="Teléfono">
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <textarea id="mensajeContacto" class="form-control" rows="4" placeholder="Mensaje *" required></textarea>
+                        </div>
+                    
+                    <button type="submit" class="btn btn-success px-4 py-2">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row align-items-start">
+                
+                <div class="col-md-3">
+                    <h5 class="mb-3">Huerto Hogar</h5>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="d-flex flex-wrap">
+                        <a href="#" class="text-primary text-decoration-none me-2">Nosotros</a>
+                        <span class="me-2">|</span>
+                        <a href="blogs.html" class="text-primary text-decoration-none me-2">Blogs</a>
+                        <span class="me-2">|</span>
+                        <a href="#" class="text-primary text-decoration-none">Contacto</a>
+                    </div>
+                </div>
+                
+                <div class="col-md-5">
+                    <p class="mb-2">¡No te pierdas las últimas noticias!</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Ingresa tu email" aria-label="Email">
+                        <button class="btn btn-primary" type="button">Suscribirse</button>
+                    </div>
+                </div>
+            </div>
+        
+        <div class="row mt-4">
+            <div class="col-md-7">
+            <div class="d-flex align-items-center">
+                <span class="me-3">Métodos de pago:</span>
+                <div class="d-flex gap-2">
+                <span class="badge bg-light text-dark px-3 py-2">
+                    <i class="fab fa-cc-visa"></i> Visa
+                </span>
+                <span class="badge bg-light text-dark px-3 py-2">
+                    <i class="fab fa-cc-mastercard"></i> MasterCard
+                </span>
+                <span class="badge bg-light text-dark px-3 py-2">
+                    <i class="fab fa-paypal"></i> PayPal
+                </span>
+                </div>
+            </div>
+            </div>
+        </div>
+        
+        <hr class="my-4">
+        <div class="row">
+            <div class="col-12 text-center">
+            <small>© 2024 Huerto Hogar. Todos los derechos reservados.</small>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+
+
+    <script src="src/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
