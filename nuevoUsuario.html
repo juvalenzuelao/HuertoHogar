@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nuevo Usuario | Admin HuertoHogar</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <img class="brand-logo" src="src/img/LogoHuerto.png" alt="HuertoHogar">
+    </div>
+
+    <nav class="sidebar-nav">
+      <a href="homeAdmin.html" class="sidebar-link"><i class="bi bi-speedometer2"></i><span>Inicio</span></a>
+      <a href="usuario.html" class="sidebar-link"><i class="bi bi-bag-check"></i><span>Usuarios</span></a>
+      <a href="nuevoUsuario.html" class="sidebar-link active" aria-current="page"><i class="bi bi-box-seam"></i><span>Nuevo usuario</span></a>
+      <a href="editarUsuario.html" class="sidebar-link"><i class="bi bi-pen"></i><span>Editar usuario</span></a>
+    </nav>
+
+    <div class="sidebar-bottom">
+      <a href="#" class="sidebar-link muted"><i class="bi bi-bag"></i><span>Ir a Tienda</span></a>
+      <a href="#" class="sidebar-link muted"><i class="bi bi-power"></i><span>Salir</span></a>
+      <div class="copyright small">© 2025</div>
+    </div>
+  </aside>
+
+  <main class="content">
+    <div class="page-header d-flex align-items-center justify-content-between">
+      <h1 class="h5 m-0">Nuevo Usuario</h1>
+      <a href="usuario.html" class="btn btn-outline-secondary btn-sm"><i class="bi bi-arrow-left"></i> Volver</a>
+    </div>
+
+    <div class="card mt-3 shadow-sm border-0">
+      <div class="card-header bg-white">
+        <strong>Registro de usuario</strong>
+      </div>
+
+      <div class="card-body">
+        <form id="form-admin-usuario" class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-md-4">
+              <label class="form-label" for="a-run">RUN * (sin puntos ni guion)</label>
+              <input id="a-run" class="form-control" minlength="7" maxlength="9" placeholder="19011022K" required>
+              <div class="invalid-feedback">RUN inválido. Ej: 19011022K</div>
+            </div>
+
+            <div class="col-md-4">
+              <label class="form-label" for="a-nombre">Nombres *</label>
+              <input id="a-nombre" class="form-control" maxlength="50" required>
+              <div class="invalid-feedback">Nombre requerido (máx. 50).</div>
+            </div>
+
+            <div class="col-md-4">
+              <label class="form-label" for="a-apellidos">Apellidos *</label>
+              <input id="a-apellidos" class="form-control" maxlength="100" required>
+              <div class="invalid-feedback">Apellidos requeridos (máx. 100).</div>
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label" for="a-correo">Correo *</label>
+              <input id="a-correo" type="email" class="form-control" maxlength="100" placeholder="tucorreo@duoc.cl" required>
+              <div class="invalid-feedback">Correo inválido o dominio no permitido.</div>
+              <div class="form-text">Dominios permitidos: duoc.cl, profesor.duoc.cl, gmail.com</div>
+            </div>
+
+            <div class="col-md-3">
+              <label class="form-label" for="a-pass">Contraseña *</label>
+              <input id="a-pass" type="password" class="form-control" minlength="4" maxlength="10" required>
+              <div class="invalid-feedback">4 a 10 caracteres.</div>
+            </div>
+
+            <div class="col-md-3">
+              <label class="form-label" for="a-pass2">Confirmar contraseña *</label>
+              <input id="a-pass2" type="password" class="form-control" minlength="4" maxlength="10" required>
+              <div class="invalid-feedback">Las contraseñas deben coincidir.</div>
+            </div>
+
+            <div class="col-md-4">
+              <label class="form-label" for="a-telefono">Teléfono (opcional)</label>
+              <input id="a-telefono" class="form-control" inputmode="numeric" placeholder="987654321">
+              <div class="invalid-feedback">Teléfono inválido (solo dígitos).</div>
+            </div>
+
+            <div class="col-md-4">
+              <label class="form-label" for="a-tipo">Tipo de Usuario *</label>
+              <select id="a-tipo" class="form-select" required>
+                <option value="">Seleccione…</option>
+                <option>Administrador</option>
+                <option>Vendedor</option>
+                <option>Cliente</option>
+              </select>
+              <div class="invalid-feedback">Seleccione un tipo de usuario.</div>
+            </div>
+
+            <div class="col-md-4">
+              <label class="form-label" for="a-fecha">Fecha de nacimiento (opcional)</label>
+              <input id="a-fecha" type="date" class="form-control">
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label" for="a-region">Región *</label>
+              <select id="a-region" class="form-select" required>
+                <option value="">Seleccione…</option>
+                <option value="Metropolitana">Metropolitana</option>
+                <option value="Biobío">Biobío</option>
+                <option value="Los Lagos">Los Lagos</option>
+              </select>
+              <div class="invalid-feedback">Seleccione una región.</div>
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label" for="a-comuna">Comuna *</label>
+              <select id="a-comuna" class="form-select" required>
+                <option value="">Seleccione…</option>
+              </select>
+              <div class="invalid-feedback">Seleccione una comuna.</div>
+            </div>
+
+            <div class="col-12">
+              <label class="form-label" for="a-dir">Dirección *</label>
+              <input id="a-dir" class="form-control" maxlength="300" placeholder="Calle, número, depto" required>
+              <div class="invalid-feedback">Dirección requerida (máx. 300).</div>
+            </div>
+          </div>
+
+          <div class="d-flex gap-2 mt-4">
+            <button type="submit" class="btn btn-success btn-huerto">Guardar</button>
+            <a href="usuario.html" class="btn btn-outline-secondary">Cancelar</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
