@@ -1,9 +1,11 @@
 @import url('https://fonts.google.com/specimen/Montserrat');
 
 body{
-    background-color: #F7F7F7;
+    background: url('../img/fondoForm.jpg') no-repeat center center fixed;
+    background-size: cover;   
     font-family: 'Montserrat', 'sans-serif';
     color: #333333
+    
 }
 
 .logo-Huerto{
@@ -32,30 +34,19 @@ body{
 .infoTienda{
     margin-top: 40px;
 }
-
-.containerInfo{
-    background-color: #DDDDDD;
-    padding-bottom: 20px;
-    padding-left: 25px;
-    border-radius: 10px;
+.fondo-form {
+    background: rgba(255,255,255);
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
-.containerProduct .card {
-    height: 18rem;
-    width: 18rem;
-    display: flex;
-    flex-direction: column;
-}
 
-.containerProduct .card-img-top {
-    height: 200px;
-    
-}
-
-.containerProduct .card-body {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #DDDDDD;
+.contacto {
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+    border-radius: 5%;
 }
