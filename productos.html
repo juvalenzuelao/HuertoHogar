@@ -11,61 +11,45 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
     <div class="container">
       <div class="col-md-6 logo-Huerto">
         <img src="src/img/LogoHuerto.png" alt="Huerto" class="img-fluid rounded">
       </div>
       <a class="navbar-brand title-page" href="#">Huerto Hogar</a>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav me-auto menu">
-            <li class="nav-item">
-              <a class="nav-link" href="main.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Productos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="nosotros.html">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="blogs.html">Blogs</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contacto.html">Contacto</a>
-            </li>
-          </ul>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
       <div class="collapse navbar-collapse" id="navbarNav">
-        
-        <div class="d-flex align-items-center ms-auto">
-          <a href="/carrito.html" class="text-dark text-decoration-none">
+        <ul class="navbar-nav me-auto menu">
+          <li class="nav-item">
+            <a class="nav-link" href="/main.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blogs.html">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+
+        <div class="d-flex align-items-center">
+          <a href="/carrito.html">
             <i class="fas fa-shopping-cart"></i>
             <span class="ms-2">Prod(0)</span>
-          </a>
+        </a>
         </div>
       </div>
     </div>
   </nav>
-
-  <div class="container mt-4 containerInfo">
-    <div class="row">
-      <div class="col-md-6 infoTienda">
-        <h2>Tienda Online</h2>
-        <p>En Huerto Hogar, te ofrecemos todo lo que necesitas para crear y mantener tu propio huerto en casa. Desde
-          semillas orgánicas hasta herramientas de jardinería, tenemos todo lo que necesitas para cultivar tus propias
-          frutas y verduras frescas.</p>
-        <p>Nuestro compromiso es brindarte productos de alta calidad y asesoramiento experto para que tu experiencia de
-          jardinería sea exitosa y gratificante.</p>
-        <a href="#" class="btn btn-primary">Ver Productos</a>
-      </div>
-
-      <div class="col-md-6">
-        <img src="src/img/LogoHuerto.png" alt="Huerto" class="img-fluid rounded logoTienda">
-      </div>
-    </div>
-  </div>
 
     <div class="container text-center tamannoGrid">
       <div class="row">
@@ -183,6 +167,7 @@
 
         </div>
       </div>
+    </div>
 
   <footer class="bg-dark text-white py-4 mt-5">
     <div class="container">
@@ -191,17 +176,19 @@
         <div class="col-md-3">
           <h5 class="mb-3">Huerto Hogar</h5>
         </div>
-        
+
+        <!-- Categorías -->
         <div class="col-md-4">
           <div class="d-flex flex-wrap">
-            <a href="nosotros.html" class="text-primary text-decoration-none me-2">Nosotros</a>
+            <a href="#" class="text-primary text-decoration-none me-2">Nosotros</a>
             <span class="me-2">|</span>
-            <a href="blogs.html" class="text-primary text-decoration-none me-2">Blogs</a>
+            <a href="#" class="text-primary text-decoration-none me-2">Blogs</a>
             <span class="me-2">|</span>
-            <a href="contacto.html" class="text-primary text-decoration-none">Contacto</a>
+            <a href="#" class="text-primary text-decoration-none">Contacto</a>
           </div>
         </div>
-        
+
+        <!-- Newsletter -->
         <div class="col-md-5">
           <p class="mb-2">¡No te pierdas las últimas noticias!</p>
           <div class="input-group">
@@ -210,7 +197,8 @@
           </div>
         </div>
       </div>
-      
+
+      <!-- Segunda fila: Métodos de pago -->
       <div class="row mt-4">
         <div class="col-md-7">
           <div class="d-flex align-items-center">
@@ -229,7 +217,8 @@
           </div>
         </div>
       </div>
-      
+
+      <!-- Línea separadora y copyright -->
       <hr class="my-4">
       <div class="row">
         <div class="col-12 text-center">
@@ -240,9 +229,9 @@
   </footer>
 
 
-  <script src="src/js/script.js"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-  
+
 </body>
 
 </html>

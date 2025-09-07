@@ -11,65 +11,123 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
     <div class="container">
       <div class="col-md-6 logo-Huerto">
         <img src="src/img/LogoHuerto.png" alt="Huerto" class="img-fluid rounded">
       </div>
       <a class="navbar-brand title-page" href="#">Huerto Hogar</a>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav me-auto menu">
-            <li class="nav-item">
-              <a class="nav-link" href="main.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Productos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="nosotros.html">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="blogs.html">Blogs</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contacto.html">Contacto</a>
-            </li>
-          </ul>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
       <div class="collapse navbar-collapse" id="navbarNav">
-        
-        <div class="d-flex align-items-center ms-auto">
-          <a href="/carrito.html" class="text-dark text-decoration-none">
+        <ul class="navbar-nav me-auto menu">
+          <li class="nav-item">
+            <a class="nav-link" href="/main.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+        </ul>
+
+        <div class="d-flex align-items-center">
+          <a href="/carrito.html">
             <i class="fas fa-shopping-cart"></i>
             <span class="ms-2">Prod(0)</span>
-          </a>
+        </a>
         </div>
       </div>
     </div>
   </nav>
 
-  <div class="container mt-4 containerInfo">
+  <section class="container my-5">
     <div class="row">
-      <div class="col-md-6 infoTienda">
-        <h2>Tienda Online</h2>
-        <p>En Huerto Hogar, te ofrecemos todo lo que necesitas para crear y mantener tu propio huerto en casa. Desde
-          semillas orgánicas hasta herramientas de jardinería, tenemos todo lo que necesitas para cultivar tus propias
-          frutas y verduras frescas.</p>
-        <p>Nuestro compromiso es brindarte productos de alta calidad y asesoramiento experto para que tu experiencia de
-          jardinería sea exitosa y gratificante.</p>
-        <a href="#" class="btn btn-primary">Ver Productos</a>
-      </div>
-
       <div class="col-md-6">
-        <img src="src/img/LogoHuerto.png" alt="Huerto" class="img-fluid rounded logoTienda">
+        <div class="contenedor">
+
+          <!-- Carrusel principal -->
+          <div class="carrusel">
+            <div id="bootstrapCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active carruselImg">
+                  <img src="/src/img/Manzanas.jpg" class="w-100" alt="Imagen 1">
+                </div>
+                <div class="carousel-item carruselImg">
+                  <img src="/src/img/ManzanasFuji.jpg" class="w-100" alt="Imagen 2">
+                </div>
+                <div class="carousel-item carruselImg">
+                  <img src="/src/img/ManzanasVarias.jpg" class="w-100" alt="Imagen 3">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#bootstrapCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#bootstrapCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <!-- Miniaturas -->
+          <div class="miniaturas">
+            <img src="/src/img/Manzanas.jpg" class="active " data-bs-target="#bootstrapCarousel" data-bs-slide-to="0">
+            <img src="/src/img/ManzanasFuji.jpg" data-bs-target="#bootstrapCarousel" data-bs-slide-to="1">
+            <img src="/src/img/ManzanasVarias.jpg" data-bs-target="#bootstrapCarousel" data-bs-slide-to="2">
+          </div>
+
+        </div>
+      </div>
+      <!--Compra y descripción-->
+      <div class="col-md-6">
+        <h3 class="fw-bold">FR001 Manzana Fuji.</h3>
+        <h3 class="text-danger fw-bold">$1.200 x KG
+        </h3>
+        <button class="btn btn-outline-secondary w-100 mb-3">AÑADIR AL CARRO</button>
+        <div class="p-3 bg-light border rounded">
+          <h5 class="text-success">Descripción<nav></nav>
+          </h5>
+          <p>Disfruta del perfecto equilibrio de las manzanas Fuji. Con su piel fina y un color que varía del rosa al
+            amarillo verdoso, esconden una pulpa extraordinariamente jugosa, dulce y crujiente.</p>
+          <p> Ideal para comer frescas, hornear o crear postres que endulzarán tu día. ¡La naturaleza en su estado más
+            delicioso!</p>
+        </div>
+
       </div>
     </div>
-  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Cambiar borde activo al hacer clic
+      const miniaturas = document.querySelectorAll('.miniaturas img');
+      miniaturas.forEach(img => {
+        img.addEventListener('click', () => {
+          miniaturas.forEach(i => i.classList.remove('active'));
+          img.classList.add('active');
+        });
+      });
+    </script>
+
+  </section>
+
+  <hr>
+  <!--Productos-->
+  <section>
 
     <div class="container text-center tamannoGrid">
       <div class="row">
-        <div class="col-md-3">
+        <div class="col">
           <a href="/productosDetallesNaranja.html">
             <div class="card" style="width: 18rem;">
               <img src="/src/img/NaranjaValencia.jpg" class="card-img-top imgGrid" alt="...">
@@ -84,7 +142,7 @@
           </a>
         </div>
 
-        <div class="col-md-3">
+        <div class="col">
           <a href="/productosDetallesPlatano.html">
             <div class="card" style="width: 18rem;">
               <img src="/src/img/PlatanoCavendish.png" class="card-img-top imgGrid" alt="...">
@@ -100,7 +158,7 @@
 
         </div>
 
-        <div class="col-md-3">
+        <div class="col">
           <a href="/productosDetallesZanahoria.html">
             <div class="card" style="width: 18rem;">
               <img src="/src/img/ZanahoriasOrganicas.png" class="card-img-top imgGrid" alt="...">
@@ -116,7 +174,7 @@
 
         </div>
 
-        <div class="col-md-3">
+        <div class="col">
           <a href="/productosDetallesEspinaca.html">
             <div class="card" style="width: 18rem;">
               <img src="/src/img/EspinacasFrescas.jpg" class="card-img-top imgGrid" alt="...">
@@ -134,55 +192,7 @@
       </div>
     </div>
 
-    <div class="container text-center tamannoGrid">
-      <div class="row">
-        <div class="col-md-3">
-          <a href="/productosDetallesManzana.html">
-            <div class="card" style="width: 18rem;">
-              <img src="/src/img/ManzanasFuji.jpg" class="card-img-top imgGrid" alt="...">
-              <div class="card-body">
-                <p class="card-text text-start">FR001 Manzana Funji</p>
-                <hr>
-                <div class="text-end">
-                  <p class="text-end otro"><b class="colorSecundario">$1.200 x KG</b></p>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-3">
-          <a href="/productosDetallesMiel.html">
-            <div class="card" style="width: 18rem;">
-              <img src="/src/img/MielOrganica.jpg" class="card-img-top imgGrid" alt="...">
-              <div class="card-body">
-                <p class="card-text text-start">PO001 Miel orgánica</p>
-                <hr>
-                <div class="text-end">
-                  <p class="text-end otro"><b class="colorSecundario">$5000 x GR</b></p>
-                </div>
-              </div>
-            </div>
-          </a>
-
-        </div>
-
-        <div class="col-md-3">
-          <a href="/productosDetallesPimiento.html">
-            <div class="card" style="width: 18rem;">
-              <img src="/src/img/PimientosTricolores.jpg" class="card-img-top imgGrid" alt="...">
-              <div class="card-body">
-                <p class="card-text text-start">VR003 Pimientos tricolores</p>
-                <hr>
-                <div class="text-end">
-                  <p class="text-end otro"><b class="colorSecundario">$1500 x KG</b></p>
-                </div>
-              </div>
-            </div>
-          </a>
-
-        </div>
-      </div>
+  </section>
 
   <footer class="bg-dark text-white py-4 mt-5">
     <div class="container">
@@ -191,17 +201,17 @@
         <div class="col-md-3">
           <h5 class="mb-3">Huerto Hogar</h5>
         </div>
-        
+
         <div class="col-md-4">
           <div class="d-flex flex-wrap">
-            <a href="nosotros.html" class="text-primary text-decoration-none me-2">Nosotros</a>
+            <a href="#" class="text-primary text-decoration-none me-2">Nosotros</a>
             <span class="me-2">|</span>
-            <a href="blogs.html" class="text-primary text-decoration-none me-2">Blogs</a>
+            <a href="#" class="text-primary text-decoration-none me-2">Blogs</a>
             <span class="me-2">|</span>
-            <a href="contacto.html" class="text-primary text-decoration-none">Contacto</a>
+            <a href="#" class="text-primary text-decoration-none">Contacto</a>
           </div>
         </div>
-        
+
         <div class="col-md-5">
           <p class="mb-2">¡No te pierdas las últimas noticias!</p>
           <div class="input-group">
@@ -210,7 +220,7 @@
           </div>
         </div>
       </div>
-      
+
       <div class="row mt-4">
         <div class="col-md-7">
           <div class="d-flex align-items-center">
@@ -229,7 +239,7 @@
           </div>
         </div>
       </div>
-      
+
       <hr class="my-4">
       <div class="row">
         <div class="col-12 text-center">
@@ -240,9 +250,9 @@
   </footer>
 
 
-  <script src="src/js/script.js"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-  
+
 </body>
 
 </html>
