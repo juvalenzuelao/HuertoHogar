@@ -1,116 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="src/css/styleMarlon.css">
-    <title>Huerto Hogar</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/styleMarlon.css">
+  <title>Huerto Hogar</title>
+  <script src="/src/js/script.js"></script>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-      <div class="container">
-        <div class="col-md-6 logo-Huerto">
-                <img src="src/img/LogoHuerto.png" alt="Huerto" class="img-fluid rounded">
-            </div>
-        <a class="navbar-brand title-page" href="#">Huerto Hogar</a>
-        
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container">
+      <div class="col-md-6 logo-Huerto">
+        <img src="src/img/LogoHuerto.png" alt="Huerto" class="img-fluid rounded">
+      </div>
+      <a class="navbar-brand title-page" href="#">Huerto Hogar</a>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav me-auto menu">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Productos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Blogs</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
-            </li>
-          </ul>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-          <div class="d-flex align-items-center">
-            <i class="fas fa-shopping-cart"></i>
-            <span class="ms-2">Prod(0)</span>
-          </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto menu">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Blogs</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+        </ul>
+        <div class="d-flex align-items-center">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="ms-2">Prod(0)</span>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
+
+  <!-- Formulario -->
+  <div class="form-container divSesion">
+    <form class="row g-3" id="registroForm">
+      <img class="logo-Huerto divSesion" src="/src/img/LogoHuerto.png" alt="Logo">
+
+      <div class="col-12">
+        <label for="Nombres" class="form-label">Nombres</label>
+        <input type="text" class="form-control" id="Nombres">
+      </div>
+
+      <div class="col-12">
+        <label for="Rut" class="form-label">Rut</label>
+        <input type="text" class="form-control" id="Rut" placeholder="Ej: 19011022K">
+      </div>
 
 
-    <div class="form-container divSesion">
-        <form class="row g-3">
-            <img class="logo-Huerto divSesion" src="/src/img/LogoHuerto.png" alt="Logo">
-            <div class="col-12">
-                <label for="inputEmail4" class="form-label">Nombre completo</label>
-                <input type="email" class="form-control" id="inputEmail4">
-            </div>
+      <div class="col-12">
+        <label for="Apellidos" class="form-label">Apellidos</label>
+        <input type="text" class="form-control" id="Apellidos">
+      </div>
 
-            <div class="col-12">
-                <label for="inputPassword4" class="form-label">Correo electrónico</label>
-                <input type="password" class="form-control" id="inputPassword4">
-            </div>
+      <div class="col-12">
+        <label for="Correo" class="form-label">Correo electrónico</label>
+        <input type="email" class="form-control" id="Correo" placeholder="ejemplo@duoc.cl">
+      </div>
 
-            <div class="col-12">
-                <label for="inputPassword5" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" id="inputPassword5">
-            </div>
+      <div class="col-12">
+        <label for="Contrasenna" class="form-label">Contraseña</label>
+        <input type="password" class="form-control" id="Contrasenna">
+      </div>
 
-            <div class="col-12">
-                <label for="inputAddress" class="form-label">Confirmar contraseña</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="">
-            </div>
+      <div class="col-12">
+        <label for="RepetirContrasenna" class="form-label">Confirmar contraseña</label>
+        <input type="password" class="form-control" id="RepetirContrasenna">
+      </div>
 
-            <div class="col-12">
-                <label for="inputAddress2" class="form-label">Teléfono (opcional)</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="">
-            </div>
+      <div class="col-12">
+        <label for="Direccion" class="form-label">Dirección</label>
+        <input type="text" class="form-control" id="Direccion">
+      </div>
 
-            <div class="col-md-6">
-            <label for="inputComuna" class="form-label">Comuna</label>
-            <select id="inputComuna" class="form-select">
-                <option selected>-- Selecciona la comuna --</option>
-                <option>Linares</option>
-                <option>Longaví</option>
-                <option>Concepción</option>
-            </select>
-            </div>
+      <div class="col-md-6">
+        <label for="inputRegion" class="form-label">Región</label>
+        <select id="inputRegion" class="form-select">
+          <option selected>-- Selecciona la región --</option>
+          <option>Región Metropolitana de Santiago</option>
+          <option>Región de la Araucanía</option>
+          <option>Región de Ñuble</option>
+        </select>
+      </div>
 
-            <div class="col-md-6">
-            <label for="inputRegion" class="form-label">Región</label>
-            <select id="inputRegion" class="form-select">
-                <option selected>-- Selecciona la región --</option>
-                <option>Región Metropolitana de Santiago</option>
-                <option>Región de la Araucanía</option>
-                <option>Región de Ñuble</option>
-            </select>
-            </div>
+      <div class="col-md-6">
+        <label for="inputComuna" class="form-label">Comuna</label>
+        <select id="inputComuna" class="form-select">
+          <option selected>-- Selecciona la comuna --</option>
+          <option>Linares</option>
+          <option>Longaví</option>
+          <option>Concepción</option>
+        </select>
+      </div>
 
-            <div class="col-12">
-                <button type="submit" class="btn btn-primary w-100">Registrarse</button>
-            </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary w-100">Registrarse</button>
+      </div>
+    </form>
+  </div>
 
-
-        </form>
-</div>
-
-    
-
-
-
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="src/js/scriptRegistro.js"></script>
 </body>
+
 </html>
