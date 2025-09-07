@@ -1,9 +1,11 @@
 @import url('https://fonts.google.com/specimen/Montserrat');
 
 body{
-    background-color: #F7F7F7;
+    background: url('../img/fondoForm.jpg') no-repeat center center fixed;
+    background-size: cover;   
     font-family: 'Montserrat', 'sans-serif';
     color: #333333
+    
 }
 
 .logo-Huerto{
