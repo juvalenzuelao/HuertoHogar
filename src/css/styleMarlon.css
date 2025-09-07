@@ -62,37 +62,37 @@ body{
     background-color: #DDDDDD;
 }
 
-.divSesion{  /*USADO EN REGISTRO E INICIO DE SESION*/
-    max-width: 500px; /* tamaño máximo horizontal */
-    margin: 50px auto; /* centrado horizontal con margen arriba/abajo */
+.divSesion{  
+    max-width: 500px; 
+    margin: 50px auto; 
     padding: 20px;
-    background: #fff; /* opcional, como tarjeta */
+    background: #fff; 
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* opcional */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
 }
 
 .contenedor {
     display: flex;
-    flex-direction: column; /* Carrusel arriba, miniaturas abajo */
-    align-items: center;    /* Centrar todo */
-    gap: 15px;              /* Espacio entre carrusel y miniaturas */
+    flex-direction: column; 
+    align-items: center;    
+    gap: 15px;              
 }
 
 .carrusel {
-    width: 600px;           /* Ajusta el ancho del carrusel */
+    width: 600px;          
 }
 
 .miniaturas {
     display: flex;
-    flex-direction: row;    /* Miniaturas en fila */
+    flex-direction: row;    
     justify-content: center;
-    gap: 10px;              /* Espacio entre miniaturas */
-    width: 100%;            /* Ocupar ancho completo si quieres */
-    margin: 0;              /* Sin márgenes laterales */
+    gap: 10px;              
+    width: 100%;           
+    margin: 0;             
 }
 
 .miniaturas img {
-    width: 100px;           /* Tamaño miniaturas */
+    width: 100px;           
     cursor: pointer;
     border: 2px solid transparent;
     border-radius: 5px;
@@ -100,7 +100,7 @@ body{
 }
 
 .carruselImg {  
-  height: 400px;        /* Fija una altura igual para todas */
+  height: 400px;        
 }
 
 .colorSecundario{
@@ -108,9 +108,9 @@ body{
 }
 
 .imgGrid {
-  width: 100%;           /* Que siempre ocupe el ancho completo de la card */
-  height: 200px;         /* Altura fija para todas las imágenes */
-  object-fit: cover;     /* Recorta manteniendo proporciones */
+  width: 100%;           
+  height: 200px;         
+  object-fit: cover;    
 }
 
 .tamannoGrid {
