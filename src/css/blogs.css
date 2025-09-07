@@ -1,0 +1,119 @@
+@import url('https://fonts.google.com/specimen/Montserrat');
+
+body{
+    background: url('../img/fondoForm.jpg') no-repeat center center fixed;
+    background-size: cover;   
+    font-family: 'Montserrat', 'sans-serif';
+    color: #333333
+    
+}
+
+.logo-Huerto{
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.title-page {
+    font-size: 26px;
+}
+.menu{
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 20%;
+}
+
+.logoTienda{
+    width: 50%;
+    margin-top: 10%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.infoTienda{
+    margin-top: 40px;
+}
+
+.containerInfo {
+    background: rgba(248, 249, 250, 0.95);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #28a745;
+}
+
+.infoTienda h2 {
+    font-family: 'Playfair Display', serif;
+    color: #2c3e50;
+    font-weight: 700;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #28a745;
+    padding-bottom: 8px;
+}
+
+.card-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #495057;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(40, 167, 69, 0.4);
+    background: linear-gradient(45deg, #218838, #1ea36d);
+}
+
+
+.logoBlog {
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.logoBlog:hover {
+    transform: scale(1.05);
+}
+
+.blog-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.blog-tag {
+    background: linear-gradient(45deg, #28a745, #20c997);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.read-time {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.container-alternate {
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) {
+    .containerInfo {
+        padding: 25px;
+        margin-top: 20px;
+    }
+}
