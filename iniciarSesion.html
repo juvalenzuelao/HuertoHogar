@@ -16,7 +16,7 @@
       <div class="col-md-6 logo-Huerto">
         <img src="src/img/LogoHuerto.png" alt="Huerto" class="img-fluid rounded">
       </div>
-      <a class="navbar-brand title-page" href="#">Huerto Hogar</a>
+      <a class="navbar-brand title-page" href="main.html">Huerto Hogar</a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
@@ -31,13 +31,13 @@
             <a class="nav-link" href="/productos.html">Productos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Nosotros</a>
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Blogs</a>
+            <a class="nav-link" href="blogs.html">Blogs</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
+            <a class="nav-link" href="contacto.html">Contacto</a>
           </li>
         </ul>
 
@@ -52,18 +52,19 @@
   </nav>
   <!-- Formulario -->
   <div class="form-container divSesion">
-    <form class="row g-3" id="registroForm">
+    <form class="row g-3" id="registroForm" action="homeAdmin.html" method="get">
       <img class="logo-Huerto divSesion" src="/src/img/LogoHuerto.png" alt="Logo">
-      <div class="col-12">
 
+      <div class="col-12">
         <label for="Correo" class="form-label">Correo electrónico</label>
-        <input type="email" class="form-control" id="Correo" placeholder="ejemplo@duoc.cl">
+        <input type="email" class="form-control" id="Correo" placeholder="ejemplo@duoc.cl" required>
       </div>
 
       <div class="col-12">
         <label for="Contrasenna" class="form-label">Contraseña</label>
-        <input type="password" class="form-control" id="Contrasenna">
+        <input type="password" class="form-control" id="Contrasenna" required>
       </div>
+
       <div class="col-12">
         <button type="submit" class="btn btn-primary w-100">Iniciar sesión</button>
         <p><b><a href="/registrarSesion.html">Registrarse</a></b></p>
