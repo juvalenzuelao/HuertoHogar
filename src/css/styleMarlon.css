@@ -42,6 +42,15 @@ body{
     border-radius: 10px;
 }
 
+.tamannoGrid a {
+  color: white; /* cámbialo al color que quieras */
+  text-decoration: none; /* quita el subrayado */
+}
+
+.tamannoGrid a:hover {
+  color:aqua; 
+}
+
 .titulo-productos {
     text-align: center;
     color: white;
