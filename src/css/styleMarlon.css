@@ -36,30 +36,18 @@ body{
 }
 
 .containerInfo{
-    background-color: #DDDDDD;
+    background-color: #fff;
     padding-bottom: 20px;
     padding-left: 25px;
     border-radius: 10px;
 }
 
-.containerProduct .card {
-    height: 18rem;
-    width: 18rem;
-    display: flex;
-    flex-direction: column;
-}
-
-.containerProduct .card-img-top {
-    height: 200px;
-    
-}
-
-.containerProduct .card-body {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #DDDDDD;
+.titulo-productos {
+    text-align: center;
+    color: white;
+    font-size: 48px;
+    margin-bottom: 30px;
+    margin-top: 20px;
 }
 
 .divSesion{  

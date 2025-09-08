@@ -41,23 +41,3 @@ body{
     padding-left: 25px;
     border-radius: 10px;
 }
-
-.containerProduct .card {
-    height: 18rem;
-    width: 18rem;
-    display: flex;
-    flex-direction: column;
-}
-
-.containerProduct .card-img-top {
-    height: 200px;
-    
-}
-
-.containerProduct .card-body {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #DDDDDD;
-}
