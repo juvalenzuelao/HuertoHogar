@@ -18,7 +18,7 @@
       </div>
       <a class="navbar-brand title-page" href="#">Huerto Hogar</a>
       
-      <!-- Botón hamburguesa para móvil -->
+      
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -50,8 +50,18 @@
           </a>
         </div>
       </div>
-    </div>
   </nav>
+
+  <div class="container tamannoGrid containerInfo">
+    <div class="row justify-content-end">
+      <div class="col-auto">
+        <a href="/iniciarSesion.html"><b>Iniciar sesión</b></a>
+      </div>
+      <div class="col-auto">
+        <a href="/registrarSesion.html"><b>Registrar usuario</b></a>
+      </div>
+    </div>
+  </div>
 
   <div class="container mt-4 containerInfo">
     <div class="row">
@@ -228,16 +238,34 @@
             </div>
           </div>
         </div>
-      </div>
-      
-      <hr class="my-4">
-      <div class="row">
-        <div class="col-12 text-center">
-          <small>© 2024 Huerto Hogar. Todos los derechos reservados.</small>
+
+        <div class="row mt-4">
+          <div class="col-md-7">
+            <div class="d-flex align-items-center">
+              <span class="me-3">Métodos de pago:</span>
+              <div class="d-flex gap-2">
+                <span class="badge bg-light text-dark px-3 py-2">
+                  <i class="fab fa-cc-visa"></i> Visa
+                </span>
+                <span class="badge bg-light text-dark px-3 py-2">
+                  <i class="fab fa-cc-mastercard"></i> MasterCard
+                </span>
+                <span class="badge bg-light text-dark px-3 py-2">
+                  <i class="fab fa-paypal"></i> PayPal
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-4">
+        <div class="row">
+          <div class="col-12 text-center">
+            <small>© 2024 Huerto Hogar. Todos los derechos reservados.</small>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
   <script src="src/js/script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
